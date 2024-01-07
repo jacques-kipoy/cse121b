@@ -1,0 +1,57 @@
+import string
+from tkinter import *
+from random import randint, choice
+window = Tk()
+window.title("Genrateur de mot de passe")
+window.geometry("800x720")
+window.iconbitmap("52840.ico")
+window.config(bg='#7180FF')
+# Boîte
+frame = Frame(window, bg='#7180FF')
+ec = Frame(frame, bg='black')
+ec2 = Frame(frame, bg='White',bd=3,relief=SUNKEN)
+ec3 = Frame(frame, bg='black')
+ec4 = Frame(frame, bg='black',bd=3,relief=SUNKEN)
+ec5 = Frame(frame, bg='black',bd=3,relief=SUNKEN)
+ec6 = Frame(frame, background='black',bd=3,relief=SUNKEN)
+# Titre
+lab2 = Label(window, text="Fait par : Le groupe d'Emmanuel ", font=("lora", 25), bg='#7180FF', fg="white")
+lab2.pack(side=BOTTOM)
+lab = Label(ec3, text="Mot de passe", font=("lora", 25), bg='#7180FF', fg="white")
+lab.pack()
+# Zone de text
+netry = Entry(ec2, font=("lora", 50), bg='#7180FF', fg="white")
+netry.pack()
+netr = Entry(ec2, font=("lora", 50), bg='#7180FF', fg="white")
+netr.pack()
+net = Entry(ec2, font=("lora", 50), bg='#7180FF', fg="white")
+net.pack()
+ne = Entry(ec2, font=("lora", 50), bg='#7180FF', fg="white")
+ne.pack()
+n = Entry(ec2, font=("lora", 50), bg='#7180FF', fg="white")
+n.pack()
+def gps():
+    rand = string.ascii_letters+string.punctuation+string.digits
+    ps = "".join(choice(rand) for x in range(randint(7, 10)))
+    ps1 = "".join(choice(rand) for x in range(randint(9, 11)))
+    ps2 = "".join(choice(rand) for x in range(randint(9, 14)))
+    ps3 = "".join(choice(rand) for x in range(randint(8, 15)))
+    ps4 = "".join(choice(rand) for x in range(randint(6,10)))
+    netry.delete(0, END)
+    netry.insert(0, ps)
+    netr.delete(0, END)
+    netr.insert(0, ps1)
+    net.delete(0, END)
+    net.insert(0, ps2)
+    ne.delete(0, END)
+    ne.insert(0, ps3)
+    n.delete(0, END)
+    n.insert(0, ps4)
+# Boutton
+b = Button(ec, text="Generer le mot de passe ", font=("lora", 25), bg='#7180FF', fg="white", command=gps)
+# c pour l'affichage
+frame.pack(expand=YES)
+b.pack(fill=Y)
+ec.pack(expand=YES)
+ec2.pack(expand=YES)
+window.mainloop()

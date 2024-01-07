@@ -1,0 +1,25 @@
+john
+Current date: 2023-01-16, Width of the tire: 205 Aspect ratio of the tire: 60 Diameter of the wheel: 15 
+volume of the tire: 39.92
+jacques
+Current date: 2023-01-16, Width of the tire: 205 Aspect ratio of the tire: 60 Diameter of the wheel: 15 
+volume of the tire: 39.92
+jacques
+Current date: 2023-01-16
+Width of the tire: 205 
+Aspect ratio of the tire: 60
+Diameter of the wheel: 15
+volume of the tire: 39.92
+jacques
+Current date: 2023-01-16
+Width of the tire: 205 
+Aspect ratio of the tire: 60
+Diameter of the wheel: 15
+volume of the tire: 39.92
+james
+Current date: 2023-01-16
+Width of the tire: 205 
+Aspect ratio of the tire: 60
+Diameter of the wheel: 15
+volume of the tire: 39.92
+Phone number: 0824775135
